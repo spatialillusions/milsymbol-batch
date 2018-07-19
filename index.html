@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			font-family: "Open Sans", Arial, sans-serif;
+			font-size: 0.9rem;
+			margin: 1rem 2rem 2rem;
+			color: #34495E;
+		}
+	</style>
+	<script src="https://unpkg.com/milsymbol/dist/milsymbol.js"></script>
+	<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	Your Excel file should have the column names "SidC", "FAL" and "Förband" on the first row of each sheet. You can however
+	have multiple sheets.</br>
+	</br>
+
+	Format:
+	<select id="format">
+		<option value="png">PNG</option>
+		<option value="svg">SVG</option>
+	</select>
+	</br>
+	</br>
+	Select you excel file:
+	<input type="file" name="xlfile" id="xlf" />
+	<div id="table">
+	</div>
+	<script>
+		document.getElementById("xlf").addEventListener("change", milsymbolBatch, false);
+	</script>
+
+</body>
+
+</html>
