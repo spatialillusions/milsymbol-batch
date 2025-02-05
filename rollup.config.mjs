@@ -1,3 +1,4 @@
+// This plugins makes sure that modules are included in the bundle
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 export default {
