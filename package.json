@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/spatialillusions/milsymbol-batch#readme",
   "dependencies": {
-    "jszip": "^3.1.5",
-    "xlsx": "^0.12.8"
+    "milsymbol": "^2.2.0",
+    "xlsx": "^0.18.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^4.34.3"
+  }
 }
